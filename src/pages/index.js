@@ -11,55 +11,56 @@ import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
+      <head>
+        <script
+          src="https://kit.fontawesome.com/d74739a174.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
-        <ul className="actions special">
+        {/* <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
               <a href="/#" className="button primary">
-                Explore
+                More...
               </a>
             </Scroll>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <Scroll type="id" element="one">
-        <a href="#one" className="more">
-          Learn More
-        </a>
+        <a href="#one" className="more"></a>
       </Scroll>
     </section>
 
     <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
-          <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
-          </h2>
+          <h2>Property maintenance across the South West</h2>
+          <i class="fas fa-faucet"></i>
+
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            I'll build anything. Any house. Any bridge. Any damm. I'll fucking
+            build it.
+            <br />I will build anything.
           </p>
         </header>
         <ul className="icons major">
           <li>
-            <span className="icon fa-gem major style1">
+            <span className="icon fa-hammer major style1">
               <span className="label">Lorem</span>
             </span>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
+            <span className="icon fa-home major style2">
               <span className="label">Ipsum</span>
             </span>
           </li>
           <li>
-            <span className="icon solid fa-code major style3">
+            <span className="icon solid fa-faucet major style3">
+              <i class="fas fa-faucet"></i>
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -131,7 +132,7 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="features">
-          <li className="icon fa-paper-plane">
+          <li className="icon fa-home">
             <h3>Arcu accumsan</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
@@ -180,7 +181,7 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Contact Me</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
             eleifend fringilla.
@@ -188,7 +189,7 @@ const IndexPage = () => (
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
+            <a href="/#" className="button fit primary icon solid fa-mail-bulk">
               Activate
             </a>
           </li>
