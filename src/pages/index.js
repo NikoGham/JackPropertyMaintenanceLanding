@@ -11,12 +11,7 @@ import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
-      <head>
-        <script
-          src="https://kit.fontawesome.com/d74739a174.js"
-          crossorigin="anonymous"
-        ></script>
-      </head>
+      
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
@@ -39,19 +34,18 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>Property maintenance across the South West</h2>
-          <i class="fas fa-faucet"></i>
 
           <p>
             I'll build anything. Any house. Any bridge. Any damm. I'll fucking
             build it.
-            <br />I will build anything.
+            <br />I will build anything. Anything at all. 
           </p>
         </header>
         <ul className="icons major">
           <li>
-            <span className="icon fa-hammer major style1">
-              <span className="label">Lorem</span>
-            </span>
+            <a className="icon fa-mail-bulk major style1">
+             
+            </a>
           </li>
           <li>
             <span className="icon fa-home major style2">
