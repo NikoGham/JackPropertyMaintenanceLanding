@@ -52,6 +52,12 @@ class Layout extends Component {
             >
               <html lang="en" />
             </Helmet>
+            <head>
+              <script
+                src="https://kit.fontawesome.com/7d3146b57e.js"
+                crossorigin="anonymous"
+              ></script>
+            </head>
             <div
               className={
                 isPreloaded

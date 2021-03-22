@@ -11,7 +11,6 @@ import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
-      
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
@@ -38,14 +37,12 @@ const IndexPage = () => (
           <p>
             I'll build anything. Any house. Any bridge. Any damm. I'll fucking
             build it.
-            <br />I will build anything. Anything at all. 
+            <br />I will build anything. Anything at all.
           </p>
         </header>
         <ul className="icons major">
           <li>
-            <a className="icon fa-gem major style1">
-             
-            </a>
+            <a className="icon fa-gem major style1"></a>
           </li>
           <li>
             <span className="icon fa-gem major style2">
@@ -54,7 +51,6 @@ const IndexPage = () => (
           </li>
           <li>
             <span className="icon solid fa-gem major style3">
-            
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -68,16 +64,11 @@ const IndexPage = () => (
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-            <h2>
-              <q>
-              gr8 bloke, nhs saved me mum
-              </q>
-            </h2>
-         
-          <p>
-           -Mrs Jones
-          </p> 
-         
+          <h2>
+            <q>gr8 bloke, nhs saved me mum</q>
+          </h2>
+
+          <p>-Mrs Jones</p>
         </div>
       </section>
       <section className="spotlight">
@@ -86,14 +77,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
+            <q>gr8 bloke, nhs saved me mum</q>
           </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
+
+          <p>-Mrs Jones</p>
         </div>
       </section>
       <section className="spotlight">
@@ -102,14 +89,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
+            <q>gr8 bloke, nhs saved me mum</q>
           </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
+
+          <p>-Mrs Jones</p>
         </div>
       </section>
     </section>
@@ -121,19 +104,17 @@ const IndexPage = () => (
           <p>
             All round general builder
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
           </p>
         </header>
         <ul className="features">
-          <li className="icon fa-home">
+          <li className="icon solid fas fa-home ">
             <h3>Plumbing</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon solid fa-laptop">
+          <li className="icon solid fas fa-tree">
             <h3>Landscaping</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
