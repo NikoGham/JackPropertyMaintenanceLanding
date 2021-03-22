@@ -157,12 +157,14 @@ ul {
 
 blockquote,
 q {
-  quotes: none;
-
-  &:before,
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  quotes: "“" "”" "‘" "’";
+  text-indent: -0.45em;
+  &:before {
+    font-size: 6rem;
+  }
   &:after {
-    content: '';
-    content: none;
+    font-size: 6rem;
   }
 }
 

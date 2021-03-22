@@ -43,18 +43,18 @@ const IndexPage = () => (
         </header>
         <ul className="icons major">
           <li>
-            <a className="icon fa-mail-bulk major style1">
+            <a className="icon fa-gem major style1">
              
             </a>
           </li>
           <li>
-            <span className="icon fa-home major style2">
+            <span className="icon fa-gem major style2">
               <span className="label">Ipsum</span>
             </span>
           </li>
           <li>
-            <span className="icon solid fa-faucet major style3">
-              <i class="fas fa-faucet"></i>
+            <span className="icon solid fa-gem major style3">
+            
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -68,15 +68,16 @@ const IndexPage = () => (
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
+            <h2>
+              <q>
+              gr8 bloke, nhs saved me mum
+              </q>
+            </h2>
+         
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
+           -Mrs Jones
+          </p> 
+         
         </div>
       </section>
       <section className="spotlight">
@@ -116,10 +117,9 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>What we do</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            All round general builder
             <br />
             fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
             ullamcorper.
@@ -127,42 +127,42 @@ const IndexPage = () => (
         </header>
         <ul className="features">
           <li className="icon fa-home">
-            <h3>Arcu accumsan</h3>
+            <h3>Plumbing</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+            <h3>Landscaping</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
+            <h3>Roof Maintenance</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+            <h3>Bathrooms</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
+            <h3>Custom Builds</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
           <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
+            <h3>Painting and Decoration</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
