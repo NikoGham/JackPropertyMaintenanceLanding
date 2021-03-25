@@ -318,6 +318,8 @@ h2 {
 h3 {
   font-size: 1.15em;
   line-height: 1.75em;
+  font-family: _font(family);
+
 
   @include breakpoint('<=small') {
     font-size: 1em;
@@ -1129,6 +1131,13 @@ button,
     position: relative;
     text-align: left;
     width: 50%;
+    font-family: _font(family);
+    font-weight: _font(weight);
+    
+    p {
+      color: #3C0000;
+    }
+
 
     @for $i from 1 through _misc(max-features) {
       $j: 0.035 * $i;

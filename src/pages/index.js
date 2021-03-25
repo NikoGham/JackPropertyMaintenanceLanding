@@ -4,9 +4,9 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import pic1 from '../assets/images/pic01_.jpg';
+import pic2 from '../assets/images/pic02_.jpg';
+import pic3 from '../assets/images/pic03_.jpg';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -41,19 +41,22 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="icons major">
-          <li>
-            <a className="icon fa-gem major style1"></a>
-          </li>
-          <li>
-            <span className="icon fa-gem major style2">
-              <span className="label">Ipsum</span>
+          
+          <li >
+          <span className="icon solid fas fa-home major style1 ">
             </span>
           </li>
           <li>
-            <span className="icon solid fa-gem major style3">
+            <span className="icon solid fas fa-hammer major style3">
               <span className="label">Dolor</span>
             </span>
           </li>
+          <li>
+            <span className="icon solid fas fa-tree major style2">
+              <span className="label">Ipsum</span>
+            </span>
+          </li>
+         
         </ul>
       </div>
     </section>
@@ -101,10 +104,7 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>What we do</h2>
-          <p>
-            All round general builder
-            <br />
-          </p>
+          
         </header>
         <ul className="features">
           <li className="icon solid fas fa-home ">
@@ -121,28 +121,28 @@ const IndexPage = () => (
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon solid fa-code">
+          <li className="icon solid fas fa-toolbox">
             <h3>Roof Maintenance</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon solid fa-headphones-alt">
+          <li className="icon solid fas fa-bath">
             <h3>Bathrooms</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon fa-heart">
+          <li className="icon solid fas fa-tools">
             <h3>Custom Builds</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-          <li className="icon fa-flag">
+          <li className="icon solid fas fa-paint-roller">
             <h3>Painting and Decoration</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
@@ -165,7 +165,7 @@ const IndexPage = () => (
         <ul className="actions stacked">
           <li>
             <a href="/#" className="button fit primary icon solid fa-mail-bulk">
-              Activate
+              Send
             </a>
           </li>
           <li>
