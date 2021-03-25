@@ -8,6 +8,9 @@ import pic1 from '../assets/images/pic01_.jpg';
 import pic2 from '../assets/images/pic02_.jpg';
 import pic3 from '../assets/images/pic03_.jpg';
 import config from '../../config';
+
+
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -168,11 +171,7 @@ const IndexPage = () => (
               Send
             </a>
           </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
-          </li>
+          
         </ul>
       </div>
     </section>
