@@ -8,4 +8,6 @@ yarn.lock
 # Build directory
 /public
 .DS_Store
+
+# Materialize SASS 
 /src/assets/sass/libs/materialize-src

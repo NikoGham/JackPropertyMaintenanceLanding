@@ -83,10 +83,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            <q>gr8 bloke, nhs saved me mum</q>
+            <q>Worked with another hansome man on my patio but the older one on the digger kept swearing</q>
           </h2>
 
-          <p>-Mrs Jones</p>
+          <cite>-Mrs Davis</cite>
         </div>
       </section>
       <section className="spotlight">
