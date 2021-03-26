@@ -35,7 +35,7 @@ const ImageGallery = () => {
 
       {data.allInstaNode.edges.map(({ node }) => (
         <a key={node.id} href={`${nodeURL}/${node.id}`}>
-          <div>
+          <div className=" ">
             <GatsbyImage
               image={node.localFile.childImageSharp.gatsbyImageData}
               loading="lazy"
