@@ -18,12 +18,7 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/jackpropmain/',
     },
-    {
-      style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
+
     {
       style: 'solid',
       icon: 'fa-envelope',

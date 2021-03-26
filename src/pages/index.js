@@ -1,15 +1,11 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
-
 import Scroll from '../components/Scroll';
-
 import pic1 from '../assets/images/pic01_.jpg';
 import pic2 from '../assets/images/pic02_.jpg';
 import pic3 from '../assets/images/pic03_.jpg';
 import config from '../../config';
-
-
+import ImageGallery from '../components/ImageGallery';
 
 const IndexPage = () => (
   <Layout>
@@ -44,10 +40,8 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="icons major">
-          
-          <li >
-          <span className="icon solid fas fa-home major style1 ">
-            </span>
+          <li>
+            <span className="icon solid fas fa-home major style1 "></span>
           </li>
           <li>
             <span className="icon solid fas fa-hammer major style3">
@@ -59,7 +53,6 @@ const IndexPage = () => (
               <span className="label">Ipsum</span>
             </span>
           </li>
-         
         </ul>
       </div>
     </section>
@@ -83,7 +76,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            <q>Worked with another hansome man on my patio but the older one on the digger kept swearing</q>
+            <q>
+              Worked with another hansome man on my patio but the older one on
+              the digger kept swearing
+            </q>
           </h2>
 
           <cite>-Mrs Davis</cite>
@@ -107,7 +103,6 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>What we do</h2>
-          
         </header>
         <ul className="features">
           <li className="icon solid fas fa-home ">
@@ -158,6 +153,14 @@ const IndexPage = () => (
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
+        <header></header>
+
+        <ImageGallery />
+      </div>
+    </section>
+
+    <section id="cta" className="wrapper style4">
+      <div className="inner">
         <header>
           <h2>Contact Me</h2>
           <p>
@@ -171,7 +174,6 @@ const IndexPage = () => (
               Send
             </a>
           </li>
-          
         </ul>
       </div>
     </section>
