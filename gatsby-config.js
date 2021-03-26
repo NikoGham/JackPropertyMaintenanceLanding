@@ -7,13 +7,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/static/images`,
-      },
-    },
-    {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `21512756790`,
@@ -21,7 +14,7 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
