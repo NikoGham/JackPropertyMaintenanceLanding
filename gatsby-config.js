@@ -6,12 +6,6 @@ module.exports = {
     title: config.siteTitle,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `21512756790`,
-      },
-    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

@@ -31,19 +31,19 @@
 
 // Palette.
 	$palette: (
-		bg:					#2e3842,
+		bg:					#3D1B40,
 		fg:					#fff,
 		fg-bold:			#fff,
 		fg-light:			rgba(255,255,255,0.5),
 		border:				#fff,
-		border-bg:			rgba(144,144,144,0.25),
-		border2:			#fff,
+		border-bg:			#3D1B40,
+		border2:			#3D1B40,
 		border2-bg:			rgba(144,144,144,0.5),
-
+// section id one title colors 
 		accent1: (
-			bg:				#D8973C,
-			fg-bold:		#ffffff,
-			fg:				mix(#21b2a6, #ffffff, 25%),
+			bg:				#97bf787a,
+			fg-bold:	    #6E3173,
+			fg:				mix(#6E3173, #3D1B40, 25%),
 			fg-light:		mix(#21b2a6, #ffffff, 40%),
 			border:			rgba(0,0,0,0.125),
 			border-bg:		rgba(255,255,255,0.075),
@@ -52,7 +52,7 @@
 		),
 
 		accent2: (
-			bg:				#3C0000,
+			bg:				#3d1b40de,
 			fg-bold:		#ffffff,
 			fg:				mix(#060e0c, #140f0f, 25%),
 			fg-light:		mix(#00ffcc, #ffffff, 40%),
@@ -85,7 +85,7 @@
 		),
 
 		accent5: (
-			bg:				#D8973C,
+			bg:				#c0f299c0,
 			fg-bold:		#ffffff,
 			fg:				mix(#505393, #ffffff, 25%),
 			fg-light:		mix(#505393, #ffffff, 40%),

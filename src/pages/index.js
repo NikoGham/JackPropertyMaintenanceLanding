@@ -5,14 +5,18 @@ import pic1 from '../assets/images/pic01_.jpg';
 import pic2 from '../assets/images/pic02_.jpg';
 import pic3 from '../assets/images/pic03_.jpg';
 import config from '../../config';
-import ImageGallery from '../components/ImageGallery';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
+        
+        <StaticImage src="../assets/img/logo2.png" placeholder="blurred" width={400} />
+
+     
+
+        {/* <h2>{config.heading}</h2> */}
         {/* <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
@@ -34,9 +38,7 @@ const IndexPage = () => (
           <h2>Property maintenance across the South West</h2>
 
           <p>
-            I'll build anything. Any house. Any bridge. Any damm. I'll fucking
-            build it.
-            <br />I will build anything. Anything at all.
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ipsam voluptates tempora, quas ea ratione eaque dignissimos? Eos vitae molestiae dolore, alias doloremque nesciunt eligendi amet sint laborum velit assumenda?
           </p>
         </header>
         <ul className="icons major">
@@ -98,7 +100,7 @@ const IndexPage = () => (
         </div>
       </section>
     </section>
-
+{/* 
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
@@ -149,13 +151,11 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-    </section>
+    </section> */}
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header></header>
-
-        <ImageGallery />
       </div>
     </section>
 

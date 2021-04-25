@@ -6,7 +6,7 @@
 @import 'libs/html-grid';
 @import 'fontawesome-all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
-@import 'libs/instagramStyle';
+
 /*
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -313,9 +313,9 @@ h6 {
     text-decoration: none;
   }
 }
-
+// green sub header banner 
 h2 {
-  font-size: 1.35em;
+  font-size: 2em;
   line-height: 1.75em;
 
   @include breakpoint('<=small') {
@@ -459,6 +459,8 @@ header {
   }
 
   h2 + p {
+    font-size: 1.1em;
+
   }
 
   h3 + p {
@@ -479,7 +481,7 @@ header {
     h4,
     h5,
     h6 {
-      border-bottom: solid 2px _palette(border);
+      border-bottom: solid 4px _palette(border);
       display: inline-block;
       padding-bottom: 1em;
       position: relative;
@@ -716,7 +718,7 @@ input[type='radio'] {
   &.major {
     @include vendor('transform', 'rotate(-45deg)');
     border-radius: 3px;
-    border: solid 2px _palette(border);
+    border: solid 4px _palette(border);
     display: inline-block;
     font-size: 1.35em;
     height: calc(3em + 2px);
@@ -740,11 +742,11 @@ input[type='radio'] {
   }
 
   &.style2 {
-    color: _palette(accent3, bg);
+    color: _palette(accent2, bg);
   }
 
   &.style3 {
-    color: _palette(accent4, bg);
+    color: _palette(accent2, bg);
   }
 }
 
@@ -1990,7 +1992,7 @@ body.is-preload,
       @include padding(5em, 3em);
 
       h2 {
-        font-size: 1.25em;
+        font-size: 2em;
         margin: 0 0 (_size(element-margin) * 0.5) 0;
       }
     }
@@ -2080,14 +2082,14 @@ body.landing,
     @include vendor(
       'background-image',
       (
-        'linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))',
-        'url("../images/banner.jpg")'
+        'linear-gradient(to top, #c0f299c0, #97399ccc)',
+        'url("../images/white-wood.jpg")'
       )
     );
     background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-position: center center;
+    background-repeat: repeat;
+    // background-size: cover;
     padding-top: 0;
   }
 
