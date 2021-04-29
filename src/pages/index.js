@@ -4,17 +4,18 @@ import Scroll from '../components/Scroll';
 import pic1 from '../assets/images/pic01_.jpg';
 import pic2 from '../assets/images/pic02_.jpg';
 import pic3 from '../assets/images/pic03_.jpg';
-import config from '../../config';
+// import config from '../../config';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        
-        <StaticImage src="../assets/img/logo2.png" placeholder="blurred" width={400} />
-
-     
+        <StaticImage
+          src="../assets/img/logo2.png"
+          placeholder="blurred"
+          width={400}
+        />
 
         {/* <h2>{config.heading}</h2> */}
         {/* <ul className="actions special">
@@ -38,7 +39,10 @@ const IndexPage = () => (
           <h2>Property maintenance across the South West</h2>
 
           <p>
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ipsam voluptates tempora, quas ea ratione eaque dignissimos? Eos vitae molestiae dolore, alias doloremque nesciunt eligendi amet sint laborum velit assumenda?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+            ipsam voluptates tempora, quas ea ratione eaque dignissimos? Eos
+            vitae molestiae dolore, alias doloremque nesciunt eligendi amet sint
+            laborum velit assumenda?
           </p>
         </header>
         <ul className="icons major">
@@ -100,7 +104,7 @@ const IndexPage = () => (
         </div>
       </section>
     </section>
-{/* 
+    {/* 
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
@@ -155,24 +159,35 @@ const IndexPage = () => (
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
-        <header></header>
-      </div>
-    </section>
-
-    <section id="cta" className="wrapper style4">
-      <div className="inner">
         <header>
-          <h2>Contact Me</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p>
+          <h2>Get in touch</h2>
         </header>
+
         <ul className="actions stacked">
+          <form>
+            <div>
+              <label htmlFor="name">
+                Name <input type="text" name="name" />
+              </label>
+            </div>{' '}
+            <div>
+              <label htmlFor="email">
+                Email <input type="email" name="email" />
+              </label>
+            </div>
+            <div>
+              <label htmlFor="message">
+                Message <textarea type="text" rows="4"  name="message" />
+              </label>
+            </div>
+          </form>
           <li>
-            <a href="/#" className="button fit primary icon solid fa-mail-bulk">
+            <button
+              type="submit"
+              className="button primary fit icon solid fa-mail-bulk"
+            >
               Send
-            </a>
+            </button>
           </li>
         </ul>
       </div>

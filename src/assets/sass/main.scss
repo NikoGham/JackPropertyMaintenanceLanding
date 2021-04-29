@@ -522,6 +522,11 @@ label {
   font-size: 0.9em;
   font-weight: _font(weight-bold);
   margin: 0 0 (_size(element-margin) * 0.5) 0;
+  width: 50vw;
+  @include breakpoint('<=small') {
+    width: auto;
+
+  }
 }
 
 input[type='text'],
@@ -1901,6 +1906,7 @@ body.is-preload,
   .inner {
     @include vendor('display', 'flex');
     max-width: 45em;
+    flex-direction: column;
 
     header {
       @include vendor('order', '1');
@@ -1943,7 +1949,6 @@ body.is-preload,
 }
 
 /* Main */
-
 #main {
   > header {
     @include padding(12em, 0);
@@ -2010,7 +2015,7 @@ body.is-mobile {
 /* Footer */
 
 #footer {
-  @include padding(6em, 0);
+  @include padding(2em, 0);
   background-color: darken(_palette(bg), 8);
   text-align: center;
 
@@ -2075,6 +2080,7 @@ body.is-mobile {
 }
 
 /* Landing */
+//  home background 
 
 body.landing,
 .main-body.landing {
@@ -2082,12 +2088,12 @@ body.landing,
     @include vendor(
       'background-image',
       (
-        'linear-gradient(to top, #c0f299c0, #97399ccc)',
+        'linear-gradient(to top, #3D1B40f5, #6E3173c9)',
         'url("../images/white-wood.jpg")'
       )
     );
     background-attachment: fixed;
-    // background-position: center center;
+    // background-position: zcenter center;
     background-repeat: repeat;
     // background-size: cover;
     padding-top: 0;
