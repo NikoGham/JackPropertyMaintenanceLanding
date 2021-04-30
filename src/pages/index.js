@@ -70,10 +70,12 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            <q>gr8 bloke, nhs saved me mum</q>
+            <q>
+              <span className="textColor">gr8 bloke, nhs saved me mum</span>
+            </q>
           </h2>
 
-          <p>-Mrs Jones</p>
+          {/* <cite>-Mrs Jones</cite> */}
         </div>
       </section>
       <section className="spotlight">
@@ -83,12 +85,11 @@ const IndexPage = () => (
         <div className="content">
           <h2>
             <q>
-              Worked with another hansome man on my patio but the older one on
-              the digger kept swearing
-            </q>
+              <span className="textColor">gr8 bloke, nhs saved me mum</span>
+            </q>{' '}
           </h2>
 
-          <cite>-Mrs Davis</cite>
+          {/* <cite>-Mrs Davis</cite> */}
         </div>
       </section>
       <section className="spotlight">
@@ -97,10 +98,12 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            <q>gr8 bloke, nhs saved me mum</q>
+            <q>
+              <span className="textColor">gr8 bloke, nhs saved me mum</span>
+            </q>{' '}
           </h2>
 
-          <p>-Mrs Jones</p>
+          {/* <cite>-Mrs Jones</cite> */}
         </div>
       </section>
     </section>
@@ -177,7 +180,7 @@ const IndexPage = () => (
             </div>
             <div>
               <label htmlFor="message">
-                Message <textarea type="text" rows="4"  name="message" />
+                Message <textarea type="text" rows="4" name="message" />
               </label>
             </div>
           </form>

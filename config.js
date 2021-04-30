@@ -6,7 +6,7 @@ module.exports = {
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/logo2.png',
+  manifestIcon: 'src/assets/img/logo1.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Jack Property Maintenance',
   subHeading: "Mike where's my mattock",

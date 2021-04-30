@@ -158,21 +158,43 @@ ul {
 blockquote,
 q {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  quotes: "“" " ”" "‘" "’";
+  quotes: '“' ' ”' '‘' '’';
   &:before {
-    font-size: 6rem;
+    font-size: 10rem;
+    color: _palette(quotes);
+    float: left;
+    margin-top: -50px;
+
   }
   &:after {
-    font-size: 6rem;
+    font-size: 10rem;
+    color: _palette(quotes);
+    float: right;
+    margin-top: 50px;
+
+  }
+  .textColor {
+    color: _palette(textColorQuotes);
   }
 
+  @include breakpoint('<=large') {
+  }
+
+  @include breakpoint('<=medium') {
+   
+  }
   @include breakpoint('<=small') {
     &:before {
       font-size: 6rem;
+      float: left;
+      margin-top: -15px;
+      vertical-align: top;
     }
     &:after {
-      font-size: 3rem;
-
+      font-size: 6rem;
+      vertical-align: bottom;
+      float: right;
+      margin-top: 50px;
     }
   }
 }
@@ -313,7 +335,7 @@ h6 {
     text-decoration: none;
   }
 }
-// green sub header banner 
+// green sub header banner
 h2 {
   font-size: 2em;
   line-height: 1.75em;
@@ -328,7 +350,6 @@ h3 {
   font-size: 1.15em;
   line-height: 1.75em;
   font-family: _font(family);
-
 
   @include breakpoint('<=small') {
     font-size: 1em;
@@ -460,7 +481,6 @@ header {
 
   h2 + p {
     font-size: 1.1em;
-
   }
 
   h3 + p {
@@ -525,7 +545,6 @@ label {
   width: 50vw;
   @include breakpoint('<=small') {
     width: auto;
-
   }
 }
 
@@ -1149,11 +1168,10 @@ button,
     width: 50%;
     font-family: _font(family);
     font-weight: _font(weight);
-    
-    p {
-      color: #3C0000;
-    }
 
+    p {
+      color: #3c0000;
+    }
 
     @for $i from 1 through _misc(max-features) {
       $j: 0.035 * $i;
@@ -1280,7 +1298,7 @@ button,
 
   @include breakpoint('<=small') {
     .content {
-      @include padding(3em, 2em);
+      @include padding(6em, 3em);
     }
   }
 }
@@ -2080,7 +2098,7 @@ body.is-mobile {
 }
 
 /* Landing */
-//  home background 
+//  home background
 
 body.landing,
 .main-body.landing {

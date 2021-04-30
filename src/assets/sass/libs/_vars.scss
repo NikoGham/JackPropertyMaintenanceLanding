@@ -44,7 +44,7 @@
 
 // Palette.
 	$palette: (
-		bg:					#3D1B40,
+		bg:					#c0f299ef,
 		fg:					#fff,
 		fg-bold:			#fff,
 		fg-light:			rgba(255,255,255,0.5),
@@ -52,6 +52,8 @@
 		border-bg:			#3D1B40,
 		border2:			#3D1B40,
 		border2-bg:			rgba(144,144,144,0.5),
+		quotes:               #47732659,
+		textColorQuotes:      #477326,
 // section id one title colors 
 		accent1: (
 			bg:				#ede8e2,
@@ -65,7 +67,7 @@
 		),
 // icon colors 2bg 
 		accent2: (
-			bg:				#8a346c94,
+			bg:				#8a346ce3,
 			fg-bold:		#ffffff,
 			fg:				mix(#060e0c, #140f0f, 25%),
 			fg-light:		mix(#00ffcc, #ffffff, 40%),
@@ -108,8 +110,9 @@
 			border2-bg:		rgba(255,255,255,0.2)
 		),
 
+		//button colors 
 		accent6: (
-			bg:				mix(#BB78BF, #3D1B40, 25%),
+			bg:				mix(#853B8C, #CE5BD9, 25%),
 			fg-bold:		#ffffff,
 			fg:				mix(#ed4933, #ffffff, 25%),
 			fg-light:		mix(#ed4933, #ffffff, 40%),
