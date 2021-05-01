@@ -1,22 +1,21 @@
 import React from 'react';
-import config from '../../config';
+import { StaticImage } from 'gatsby-plugin-image';
 export default function Footer() {
   return (
     <footer id="footer">
-      <ul className="icons">
-        {config.socialLinks.map(social => {
-          const { style, icon, name, url } = social;
-          return (
-            <li key={url}>
-              <a href={url} className={`icon ${style} ${icon}`}>
-                <span className="label">{name}</span>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+    
       <ul className="copyright">
-        <li>&copy; @NikoGham.Dev</li>
+        <li>
+          <a style={{outline: "0"}} href="https://nikogham.dev" target="_blank" rel="noreferrer">
+          <StaticImage
+            src="../assets/img/niko.png"
+            placeholder="blurred"
+            width={40}
+            alt="logo developer"
+          />
+          </a>
+          
+        </li>
         <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li>

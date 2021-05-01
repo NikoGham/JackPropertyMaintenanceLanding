@@ -56,6 +56,11 @@ class Layout extends Component {
                 href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
                 rel="stylesheet"
               ></link>
+              <link
+                href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                rel="stylesheet"
+              />
+
               <title>Jack Property Maintenance</title>
             </Helmet>
             <head>

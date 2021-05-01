@@ -7,16 +7,20 @@ import pic3 from '../assets/images/pic03_.jpg';
 // import config from '../../config';
 import { StaticImage } from 'gatsby-plugin-image';
 import Fade from 'react-reveal/Fade';
-
+import Roll from 'react-reveal/Roll';
+import Pulse from 'react-reveal/Tada';
+import Arrow from '../components/arrow'
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <StaticImage
-          src="../assets/img/logo2.png"
-          placeholder="blurred"
-          width={400}
-        />
+        <Roll left delay={2500} duration={2500}>
+          <StaticImage
+            src="../assets/img/logo2.png"
+            placeholder="blurred"
+            width={600}
+          />
+        </Roll>
 
         {/* <h2>{config.heading}</h2> */}
         {/* <ul className="actions special">
@@ -30,7 +34,9 @@ const IndexPage = () => (
         </ul> */}
       </div>
       <Scroll type="id" element="one">
-        <a href="#one" className="more"></a>
+        <a href="#one" className="arrow">
+          <span class="material-icons">expand_more</span>
+        </a>
       </Scroll>
     </section>
 
@@ -47,24 +53,27 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="icons major">
-          <li>
-            <span className="icon solid fas fa-home major style1 "></span>
-          </li>
-          <li>
-            <span className="icon solid fas fa-hammer major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fas fa-tree major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
+          <Fade left delay={1000} distance="50vw">
+            <li>
+              <span className="icon solid fas fa-home major style1 "></span>
+            </li>
+          </Fade>
+          <Fade top delay={1500}>
+            <li>
+              <span className="icon solid fas fa-hammer major style3"></span>
+            </li>
+          </Fade>
+
+          <Fade right delay={1000} distance="50vw">
+            <li>
+              <span className="icon solid fas fa-tree major style2"></span>
+            </li>
+          </Fade>
         </ul>
       </div>
     </section>
-    
-      <section id="two" className="wrapper alt style2">
+
+    <section id="two" className="wrapper alt style2">
       <Fade fraction={0.2} duration={1500}>
         <section className="spotlight">
           <div className="image">
@@ -82,38 +91,36 @@ const IndexPage = () => (
         </section>
       </Fade>
       <Fade fraction={0.2} duration={1500}>
+        <section className="spotlight">
+          <div className="image">
+            <img src={pic2} alt="" />
+          </div>
+          <div className="content">
+            <h2>
+              <q>
+                <span className="textColor">Great Service lovely team</span>
+              </q>{' '}
+            </h2>
 
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic2} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            <q>
-              <span className="textColor">Great Service lovely team</span>
-            </q>{' '}
-          </h2>
-
-          {/* <cite>-Mrs Davis</cite> */}
-        </div>
-      </section>
+            {/* <cite>-Mrs Davis</cite> */}
+          </div>
+        </section>
       </Fade>
       <Fade fraction={0.2} duration={1500}>
+        <section className="spotlight">
+          <div className="image">
+            <img src={pic3} alt="" />
+          </div>
+          <div className="content">
+            <h2>
+              <q>
+                <span className="textColor">gr8 bloke, nhs saved me mum</span>
+              </q>{' '}
+            </h2>
 
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic3} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            <q>
-              <span className="textColor">gr8 bloke, nhs saved me mum</span>
-            </q>{' '}
-          </h2>
-
-          {/* <cite>-Mrs Jones</cite> */}
-        </div>
-      </section>
+            {/* <cite>-Mrs Jones</cite> */}
+          </div>
+        </section>
       </Fade>
     </section>
     {/* 
@@ -168,6 +175,50 @@ const IndexPage = () => (
         </ul>
       </div>
     </section> */}
+    <section id="three" className="wrapperTouchBanner style1">
+      <div className="inner">
+        <Roll left>
+          <header className="majorTouch">
+            <Pulse count={2}>
+              <h2> Say hello! </h2>
+            </Pulse>
+          </header>
+        </Roll>
+
+        <ul className="icons major">
+         
+            <li>
+             
+                <span style={{}} className="icon solid fas fa-phone major style1 "></span>
+            
+
+              <br />
+           
+                {' '}
+                <h2 style={{ margin: '8px', marginLeft: '25px' }}>
+                  {' '}
+                  +44 234234 23423{' '}
+                </h2>{' '}
+             
+            </li>
+        
+          <Fade right delay={1000} distance="50vw">
+            <li>
+              <span className="icon brands fa-instagram major style2"></span>
+            <Arrow />
+            <h3> Check out my work here </h3>
+
+         </li>
+          </Fade>
+
+          <Fade bottom delay={1500}>
+            <li>
+              <span className="icon solid fa-envelope major style3"></span>
+            </li>
+          </Fade>
+        </ul>
+      </div>
+    </section>
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
@@ -193,15 +244,14 @@ const IndexPage = () => (
               </label>
             </div>
             <li>
-            <button
-              type="submit"
-              className="button primary fit icon solid fa-mail-bulk"
-            >
-              Send
-            </button>
-          </li>
+              <button
+                type="submit"
+                className="button primary fit icon solid fa-mail-bulk"
+              >
+                Send
+              </button>
+            </li>
           </form>
-         
         </ul>
       </div>
     </section>

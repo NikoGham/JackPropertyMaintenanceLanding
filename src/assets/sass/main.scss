@@ -164,14 +164,12 @@ q {
     color: _palette(quotes);
     float: left;
     margin-top: -50px;
-
   }
   &:after {
     font-size: 10rem;
     color: _palette(quotes);
     float: right;
     margin-top: 50px;
-
   }
   .textColor {
     color: _palette(textColorQuotes);
@@ -181,7 +179,6 @@ q {
   }
 
   @include breakpoint('<=medium') {
-   
   }
   @include breakpoint('<=small') {
     &:before {
@@ -198,7 +195,10 @@ q {
     }
   }
 }
-
+.arrow {
+  border-bottom: none;
+  outline: none;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -296,7 +296,7 @@ a {
   border-bottom: dotted 1px;
   color: inherit;
   text-decoration: none;
-
+  outline: 0;
   &:hover {
     border-bottom-color: transparent;
   }
@@ -505,12 +505,15 @@ header {
       display: inline-block;
       padding-bottom: 1em;
       position: relative;
-
+      animation: appear 1s linear 0s infinite alternate forwards;
       &:after {
         content: '';
         display: block;
         height: 1px;
       }
+    }
+
+    @keyframes appear {
     }
 
     p {
@@ -715,6 +718,8 @@ input[type='radio'] {
 /* Icon */
 
 .icon {
+  transition: transform ease-in-out 500ms;
+
   @include icon;
   border-bottom: none;
   position: relative;
@@ -772,6 +777,10 @@ input[type='radio'] {
   &.style3 {
     color: _palette(accent2, bg);
   }
+}
+
+.icon:hover {
+  transform: rotate(360deg);
 }
 
 /* Image */
@@ -847,7 +856,8 @@ ul {
     li {
       border-top: solid 1px _palette(border);
       padding: 0.5em 0;
-
+      
+     
       &:first-child {
         border-top: 0;
         padding-top: 0;
@@ -1553,6 +1563,110 @@ button,
     @include padding(3em, 2em);
   }
 }
+// Get in touch banner
+
+.wrapperTouchBanner {
+  @include padding(3em, 0);
+
+  > .inner {
+    width: 50vw;
+    margin: 0 auto;
+
+    @include breakpoint('<=large') {
+      width: 90%;
+    }
+
+    @include breakpoint('<=medium') {
+      width: 100%;
+    }
+  }
+
+  &.alt {
+    padding: 0;
+  }
+
+  &.style1 {
+    @include wrapper(accent1);
+  }
+
+  &.style2 {
+    background-color: _palette(bg);
+  }
+
+  &.style3 {
+    @include wrapper(accent5);
+  }
+
+  &.style4 {
+    background-color: transparent;
+  }
+
+  &.style5 {
+    @include wrapper(accent7);
+  }
+
+  @include breakpoint('<=medium') {
+    @include padding(4em, 3em);
+  }
+
+  @include breakpoint('<=small') {
+    @include padding(3em, 2em);
+  }
+
+  ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    li {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      .arrowSpecial {
+        height: 100px;
+        width: 50px;
+       
+        margin: -50px 0px 0px 30px;
+        transform: rotate(-120deg) scaleX(-1);
+      }
+
+      
+    }
+
+    &.major {
+      padding: 1em 0;
+
+      li {
+        @include breakpoint('<=small') {
+          padding: 0 1em !important;
+        }
+      }
+    }
+  }
+}
+
+.majorTouch {
+  cursor: pointer;
+  margin: 0 0 0 0;
+
+  h2 {
+    border: solid 4px #d6e1c1;
+    border-radius: 20px 20px 0px 20px;
+    display: inline-block;
+    padding: 1em;
+    position: relative;
+    animation: appear 1s linear 0s infinite alternate forwards;
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+    }
+  }
+}
 
 /* Page Wrapper + Menu */
 
@@ -2034,7 +2148,7 @@ body.is-mobile {
 
 #footer {
   @include padding(2em, 0);
-  background-color: darken(_palette(bg), 8);
+  background-color: darken(_palette(fg), 8);
   text-align: center;
 
   .icons {
@@ -2042,6 +2156,8 @@ body.is-mobile {
 
     a {
       color: _palette(fg-light);
+      text-decoration: none;
+      outline: none;
 
       &:hover {
         color: _palette(fg);
@@ -2072,6 +2188,7 @@ body.is-mobile {
 
       a {
         color: inherit;
+        border-bottom: none;
 
         &:hover {
           color: _palette(fg);
@@ -2118,7 +2235,7 @@ body.landing,
   }
 
   #footer {
-    background-color: darken(transparentize(_palette(bg), 0.1), 8);
+    background-color: darken(transparentize(_palette(quotes), 0), 1);
   }
 }
 
