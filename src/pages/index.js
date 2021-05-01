@@ -6,6 +6,7 @@ import pic2 from '../assets/images/pic02_.jpg';
 import pic3 from '../assets/images/pic03_.jpg';
 // import config from '../../config';
 import { StaticImage } from 'gatsby-plugin-image';
+import Fade from 'react-reveal/Fade';
 
 const IndexPage = () => (
   <Layout>
@@ -62,22 +63,26 @@ const IndexPage = () => (
         </ul>
       </div>
     </section>
+    
+      <section id="two" className="wrapper alt style2">
+      <Fade fraction={0.2} duration={1500}>
+        <section className="spotlight">
+          <div className="image">
+            <img src={pic1} alt="" />
+          </div>
+          <div className="content">
+            <h2>
+              <q>
+                <span className="textColor">gr8 bloke, nhs saved me mum</span>
+              </q>
+            </h2>
 
-    <section id="two" className="wrapper alt style2">
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic1} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            <q>
-              <span className="textColor">gr8 bloke, nhs saved me mum</span>
-            </q>
-          </h2>
+            {/* <cite>-Mrs Jones</cite> */}
+          </div>
+        </section>
+      </Fade>
+      <Fade fraction={0.2} duration={1500}>
 
-          {/* <cite>-Mrs Jones</cite> */}
-        </div>
-      </section>
       <section className="spotlight">
         <div className="image">
           <img src={pic2} alt="" />
@@ -85,13 +90,16 @@ const IndexPage = () => (
         <div className="content">
           <h2>
             <q>
-              <span className="textColor">gr8 bloke, nhs saved me mum</span>
+              <span className="textColor">Great Service lovely team</span>
             </q>{' '}
           </h2>
 
           {/* <cite>-Mrs Davis</cite> */}
         </div>
       </section>
+      </Fade>
+      <Fade fraction={0.2} duration={1500}>
+
       <section className="spotlight">
         <div className="image">
           <img src={pic3} alt="" />
@@ -106,6 +114,7 @@ const IndexPage = () => (
           {/* <cite>-Mrs Jones</cite> */}
         </div>
       </section>
+      </Fade>
     </section>
     {/* 
     <section id="three" className="wrapper style3 special">
@@ -183,8 +192,7 @@ const IndexPage = () => (
                 Message <textarea type="text" rows="4" name="message" />
               </label>
             </div>
-          </form>
-          <li>
+            <li>
             <button
               type="submit"
               className="button primary fit icon solid fa-mail-bulk"
@@ -192,6 +200,8 @@ const IndexPage = () => (
               Send
             </button>
           </li>
+          </form>
+         
         </ul>
       </div>
     </section>
