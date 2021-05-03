@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Arrow = () => {
+const Arrow = ({className}) => {
     return (
-        <svg className="arrowSpecial" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 449.179 449.179" style={{enableBackground: 'new 0 0 449.179 449.179'}}>
+        <svg className={className} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 449.179 449.179" style={{enableBackground: 'new 0 0 449.179 449.179'}}>
         <g>
           <path style={{fill: '#6E3173c9'}} d="M375.958,415.456v-80.442c0-7.185-5.529-13.131-12.694-13.67
               c-77.293-5.82-140.109-64.335-152.546-139.623c-0.488-2.956,0.349-5.976,2.286-8.262s4.783-3.614,7.778-3.614h15.999l0.001,0

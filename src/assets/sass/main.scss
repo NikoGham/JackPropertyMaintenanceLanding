@@ -1569,8 +1569,10 @@ button,
   @include padding(3em, 0);
 
   > .inner {
-    width: 50vw;
+    width: 90vw;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 
     @include breakpoint('<=large') {
       width: 90%;
@@ -1614,28 +1616,65 @@ button,
   }
 
   ul.icons {
+    width: 40vw;
     cursor: default;
     list-style: none;
     padding-left: 0;
+    align-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
     height: 300px;
     li {
       display: flex;
       flex-direction: row;
       padding: 20px;
-      .arrowSpecial {
+      .arrowSocial {
         height: 100px;
         width: 50px;
-       
         margin: -50px 0px 0px 30px;
         transform: rotate(-120deg) scaleX(-1);
+      }
+      .arrowEmail {
+        height: 100px;
+        width: 50px;
+        margin: 1rem 0px 0px 30px;
+        transform: rotate(-120deg);
       }
 
       
     }
+
+    @include breakpoint('<=small') {
+      width: 80vw;
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        .arrowSocial {
+          height: 100px;
+          width: 50px;
+          margin: -50px 0px 20px 20px;
+          transform: rotate(-120deg) scaleX(-1);
+        }
+        .emailTitle {
+          margin-left: 100px;
+        }
+        .arrowEmail {
+          height: 100px;
+          width: 50px;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          transform: rotate(-120deg);
+        }
+  
+
+    }
+  }
 
     &.major {
       padding: 1em 0;
@@ -1650,10 +1689,11 @@ button,
 }
 
 .majorTouch {
-  cursor: pointer;
+  cursor: auto;
   margin: 0 0 0 0;
 
   h2 {
+    height: 50%;
     border: solid 4px #d6e1c1;
     border-radius: 20px 20px 0px 20px;
     display: inline-block;
