@@ -10,6 +10,8 @@ import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
 import Pulse from 'react-reveal/Pulse';
 import Arrow from '../components/arrow';
+import SayHello from '../components/SayHello';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -120,8 +122,7 @@ const IndexPage = () => (
                   {' '}
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
                   repellendus necessitatibus explicabo ipsam quaerat id iure
-                  ullam, quod quos impedit esse asperiores odio. Quia eaque
-                  totam inventore ipsam, accusamus labore.
+                  ullam,
                 </span>
               </q>{' '}
             </h2>
@@ -183,50 +184,13 @@ const IndexPage = () => (
         </ul>
       </div>
     </section> */}
-    <section id="three" className="wrapperTouchBanner style1">
-      <div className="inner">
-        <Roll left>
-          <header className="majorTouch">
-            <Pulse count={2}>
-              <h2> Say hello! </h2>
-            </Pulse>
-          </header>
-        </Roll>
-        <Fade bottom cascade delay={3000} duration={3000}>
-          <ul className="icons major">
-            <li>
-              <span
-                style={{}}
-                className="icon solid fas fa-phone major style1 "
-              ></span>
-              <br />
-
-              <h2 style={{ margin: '8px', marginLeft: '25px' }}>
-                +44 234234 23423
-              </h2>
-            </li>
-
-            <li>
-              <span className="icon brands fa-instagram major style2"></span>
-              <Arrow className={'arrowSocial'} />
-              <h3> Check out our work here </h3>
-            </li>
-
-            <li>
-              <h3 className="emailTitle"> Or drop us an email below </h3>
-             <Pulse forever duration={1500}> <Arrow className={'arrowEmail'} /> </Pulse>
-            </li>
-          </ul>
-        </Fade>
-      </div>
-    </section>
+   <SayHello />
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
-
         <ul className="actions stacked">
           <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label htmlFor="name">
                 Name <input type="text" name="name" />
