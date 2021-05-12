@@ -8,8 +8,7 @@ import pic3 from '../assets/images/pic03_.jpg';
 import { StaticImage } from 'gatsby-plugin-image';
 import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
-import Pulse from 'react-reveal/Pulse';
-import Arrow from '../components/arrow';
+
 import SayHello from '../components/SayHello';
 
 const IndexPage = () => (
@@ -119,12 +118,9 @@ const IndexPage = () => (
             <h2>
               <q>
                 <span className="textColor">
-                  {' '}
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  repellendus necessitatibus explicabo ipsam quaerat id iure
-                  ullam,
                 </span>
-              </q>{' '}
+              </q>
             </h2>
 
             {/* <cite>-Mrs Jones</cite> */}
@@ -184,7 +180,7 @@ const IndexPage = () => (
         </ul>
       </div>
     </section> */}
-   <SayHello />
+    <SayHello />
 
     <section id="cta" className="wrapper style4">
       <div className="inner">

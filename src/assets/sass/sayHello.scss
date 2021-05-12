@@ -1,12 +1,19 @@
-.arrowSocial {
-    height: 100px;
-    width: 50px;
-    margin: -50px 0px 0px 30px;
-    transform: rotate(-120deg) scaleX(-1);
+
+
+.wrapperTouchBanner {
+  h3 {
+    font-size: 2rem;
+    opacity: 0.95;
   }
-  .arrowEmail {
-    height: 100px;
-    width: 50px;
-    margin: 1rem 0px 0px 30px;
-    transform: rotate(-120deg);
+
+  a {
+    border-bottom: none;
   }
+
+  .emailDrop {
+    border-bottom: solid #d6e1c1 5px;
+    display: inline;
+  
+  }
+  
+}
